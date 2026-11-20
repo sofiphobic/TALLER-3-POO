@@ -14,12 +14,18 @@ public abstract class Monstruo {
         this.velocidad = velocidad;
         this.fuerza = fuerza;
         this.resistencia = resistencia;
-        this.usado = false; // Parte disponible
+        this.usado = false; // disponible
     }
 
-    public String getTipo() { return tipo; }
-    public boolean getUsado() { return usado; }
-    public void setUsado(boolean estado) { usado = estado; }
+    public String getTipo() { 
+		return tipo; 
+	}
+    public boolean getUsado() { 
+		return usado; 
+	}
+    public void setUsado(boolean estado) { 
+		usado = estado; 
+	}
 
     public abstract String getAtributosPropios();
     public abstract double potencialCarrera();
